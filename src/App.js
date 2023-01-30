@@ -1,11 +1,17 @@
 import React from 'react';
+import { Navbar } from './components';
+import { styles } from './utils/styles';
 
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold text-lightBlue underline md:text-xl">
-      Hello world!
-    </h1>
+    <div className='bg-primary w-full overflow-hidden'>
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.container}`}>
+          <Navbar />
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default App;
