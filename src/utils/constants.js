@@ -20,3 +20,21 @@ export const navigationLinks = [
     title: 'Partners'
   }
 ];
+
+export const stats = [
+  {
+    id: "stats-1",
+    title: "User Active",
+    value: "4500+",
+  },
+  {
+    id: "stats-2",
+    title: "Trusted by Company",
+    value: "320+",
+  },
+  {
+    id: "stats-3",
+    title: "Transaction",
+    value: "$245M+",
+  },
+];

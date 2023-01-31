@@ -6,7 +6,7 @@ import { close, logo, menu } from "../assets";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [active, setActive] = useState("home");
-
+  
   const toggleHandler = () => {
     setToggleMenu((prevState) => !prevState);
   };
