@@ -17,12 +17,12 @@ module.exports = {
       },
     },
     screens: {
-      'xs': '480px',
-      'sm': '620px',
-      'md': '768px',
-      'lg': '1060px',
-      'xl': '1200px',
-      '2xl': '1700px'
+      xs: '480px',
+      sm: '620px',
+      md: '768px',
+      lg: '1060px',
+      xl: '1200px',
+      xxl: '1700px'
     }
   },
   plugins: [],

@@ -27,7 +27,7 @@ const Navbar = () => {
           <li
             key={link.id}
             className={`font-montserrat font-normal cursor-pointer text-[16px] text-white 
-            ${navigationLinks.length === idx ? "mr-0" : "mr-10"} 
+            ${(navigationLinks.length - 1) === idx ? "mr-0" : "mr-10"} 
             ${active === link.id ? "text-white" : "text-lightWhite"} 
             hover:text-white transition-all duration-500`}
             onClick={() => activeHandler(link.id)}
@@ -51,12 +51,11 @@ const Navbar = () => {
             !toggleMenu ? "hidden" : "flex"
           } p-6 absolute top-20 right-0 left-0 w-full sidebar bg-black-gradient`}
         >
-          <ul className={`${styles.flexCenter} flex-1 list-none`}>
+          <ul className={`${styles.flexCenter} flex-col gap-4 flex-1 list-none`}>
             {navigationLinks.map((link, idx) => (
               <li
                 key={link.id}
                 className={`font-montserrat font-normal cursor-pointer text-[16px] text-white 
-                ${navigationLinks.length === idx ? "mr-0" : "mr-10"} 
                 ${active === link.id ? "text-white" : "text-lightWhite"} 
                 hover:text-white transition-all duration-500`}
                 onClick={() => activeHandler(link.id)}

@@ -1,3 +1,9 @@
 import Navbar from "./Navbar";
+import Home from "./Home";
+import GetStarted from "./GetStarted";
 
-export { Navbar };
+export {
+    Navbar,
+    Home,
+    GetStarted
+};

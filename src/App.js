@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from './components';
+import { Home, Navbar } from './components';
 import { styles } from './utils/styles';
 
 const App = () => {
@@ -8,6 +8,12 @@ const App = () => {
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.container}`}>
           <Navbar />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.container}`}>
+          <Home />
         </div>
       </div>
     </div>
