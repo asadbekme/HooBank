@@ -1,11 +1,11 @@
-import Navbar from "./Navbar";
-import Home from "./Home";
-import GetStarted from "./GetStarted";
-import Statistics from "./Statistics";
+import Navbar from "./Header/Navbar";
+import Home from "./Home/Home";
+import Statistics from "./Statistics/Statistics";
+import Features from "./Features/Features";
 
 export {
-    Navbar,
-    Home,
-    GetStarted,
-    Statistics
+  Navbar,
+  Home,
+  Statistics,
+  Features
 };

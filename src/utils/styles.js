@@ -16,3 +16,13 @@ export const styles = {
   marginX: 'md:mx-16 mx-6',
   marginY: 'md:my-16 my-6',
 };
+
+export const layout = {
+  section: `flex lg:flex-row flex-col ${styles.paddingY}`,
+  sectionReverse: `flex lg:flex-row flex-col-reverse ${styles.paddingY}`,
+
+  sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+
+  sectionImg: `flex-1 flex ${styles.flexCenter} lg:ml-10 ml-0 lg:mt-0 mt-10 relative`,
+  sectionImgReverse: `flex-1 flex ${styles.flexCenter} lg:mr-10 mr-0 lg:mt-0 mt-10 relative`,
+};

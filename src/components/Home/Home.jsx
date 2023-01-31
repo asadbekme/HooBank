@@ -1,13 +1,13 @@
-import { discount, robot } from "../assets";
-import { styles } from "../utils/styles";
-import GetStarted from "./GetStarted";
+import { discount, robot } from "../../assets";
+import { styles } from "../../utils/styles";
+import GetStarted from "../GetStarted/GetStarted";
 
 const Home = () => {
   return (
     <section id="home" className={`flex flex-col lg:flex-row ${styles.paddingY}`}>
       {/* Information */}
       <div className={`${styles.flexStart} flex-1 flex-col xxl:px-0 xs:px-16 px-6`}>
-        {/* Discount information */}
+        {/* Discount */}
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>

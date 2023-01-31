@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Navbar, Statistics } from './components';
+import { Features, Home, Navbar, Statistics } from './components';
 import { styles } from './utils/styles';
 
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.container}`}>
           <Statistics />
+          <Features />
         </div>
       </div>
     </div>
