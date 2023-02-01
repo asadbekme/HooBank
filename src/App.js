@@ -1,6 +1,6 @@
 import React from 'react';
-import { Features, Home, Navbar, Statistics } from './components';
 import { styles } from './utils/styles';
+import { Features, Home, Navbar, Product, Statistics } from './components';
 
 const App = () => {
   return (
@@ -24,6 +24,7 @@ const App = () => {
         <div className={`${styles.container}`}>
           <Statistics />
           <Features />
+          <Product />
         </div>
       </div>
     </div>
