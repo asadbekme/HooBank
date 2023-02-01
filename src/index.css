@@ -77,3 +77,16 @@
   box-shadow: var(--card-shadow);
   transition: all 0.3s ease-in-out;
 }
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+  transition: all 0.7s ease-in-out;
+}

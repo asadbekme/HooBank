@@ -4,6 +4,7 @@ import Statistics from "./Statistics/Statistics";
 import Features from "./Features/Features";
 import Product from "./Product/Product";
 import CardDeal from "./CardDeal/CardDeal";
+import Feedbacks from "./Feedbacks/Feedbacks";
 
 export {
   Navbar,
@@ -11,5 +12,6 @@ export {
   Statistics,
   Features,
   Product,
-  CardDeal
+  CardDeal,
+  Feedbacks
 };
