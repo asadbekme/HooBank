@@ -5,6 +5,7 @@ import Features from "./Features/Features";
 import Product from "./Product/Product";
 import CardDeal from "./CardDeal/CardDeal";
 import Feedbacks from "./Feedbacks/Feedbacks";
+import Clients from "./Clients/Clients";
 
 export {
   Navbar,
@@ -13,5 +14,6 @@ export {
   Features,
   Product,
   CardDeal,
-  Feedbacks
+  Feedbacks,
+  Clients
 };
