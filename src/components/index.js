@@ -6,6 +6,7 @@ import Product from "./Product/Product";
 import CardDeal from "./CardDeal/CardDeal";
 import Feedbacks from "./Feedbacks/Feedbacks";
 import Clients from "./Clients/Clients";
+import CTA from "./CTA/CTA";
 
 export {
   Navbar,
@@ -15,5 +16,6 @@ export {
   Product,
   CardDeal,
   Feedbacks,
-  Clients
+  Clients,
+  CTA
 };
