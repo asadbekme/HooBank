@@ -7,6 +7,7 @@ import CardDeal from "./CardDeal/CardDeal";
 import Feedbacks from "./Feedbacks/Feedbacks";
 import Clients from "./Clients/Clients";
 import CTA from "./CTA/CTA";
+import Footer from "./Footer/Footer";
 
 export {
   Navbar,
@@ -17,5 +18,6 @@ export {
   CardDeal,
   Feedbacks,
   Clients,
-  CTA
+  CTA,
+  Footer
 };

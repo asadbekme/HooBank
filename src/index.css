@@ -15,6 +15,11 @@
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .sidebar {
   animation: slide-sidebar 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -84,13 +89,17 @@
 
 .feedback-card {
   background: transparent;
+  transition: all 0.7s ease-in-out;
 }
 
 .feedback-card:hover {
   background: var(--black-gradient);
-  transition: all 0.7s ease-in-out;
 }
 
-.bg-black-gradient-2 {
+.bg-dark-gradient {
   background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
