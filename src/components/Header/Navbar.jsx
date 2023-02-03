@@ -15,11 +15,13 @@ const Navbar = () => {
   return (
     <div className={`w-full py-6 ${styles.flexBetween}`}>
       {/* Logo */}
-      <img
-        src={logo}
-        alt="logo"
-        className="w-[130px] h-[35px] cursor-pointer"
-      />
+      <a href="/">
+        <img
+          src={logo}
+          alt="logo"
+          className="w-[130px] h-[35px] cursor-pointer"
+        />
+      </a>
 
       {/* Navigation Link */}
       <ul className="list-none hidden md:flex justify-end items-center flex-1">
@@ -27,12 +29,12 @@ const Navbar = () => {
           <li
             key={link.id}
             className={`font-montserrat font-normal cursor-pointer text-[16px] text-white 
-            ${(navigationLinks.length - 1) === idx ? "mr-0" : "mr-10"} 
+            ${(navigationLinks.length - 1 === idx) ? "mr-0" : "mr-10"} 
             ${active === link.id ? "text-white" : "text-lightWhite"} 
             hover:text-white transition-all duration-500`}
             onClick={() => activeHandler(link.id)}
           >
-            {link.title}
+            <a href={`#${link.id}`}>{link.title}</a>
           </li>
         ))}
       </ul>
@@ -47,20 +49,19 @@ const Navbar = () => {
         />
 
         <div
-          className={`${
-            !toggleMenu ? "hidden" : "flex"
-          } p-6 absolute top-20 right-0 left-0 w-full sidebar bg-black-gradient`}
+          className={`${!toggleMenu ? "hidden" : "flex"} 
+          p-6 absolute top-20 right-0 mx-4 my-2 min-w-[160px] rounded-xl sidebar bg-black-gradient`}
         >
-          <ul className={`${styles.flexCenter} flex-col gap-4 flex-1 list-none`}>
-            {navigationLinks.map((link, idx) => (
+          <ul className={`list-none flex justify-end items-start flex-1 flex-col gap-4`}>
+            {navigationLinks.map((link) => (
               <li
                 key={link.id}
-                className={`font-montserrat font-normal cursor-pointer text-[16px] text-white 
+                className={`font-montserrat font-normal cursor-pointer text-[17px] text-white 
                 ${active === link.id ? "text-white" : "text-lightWhite"} 
                 hover:text-white transition-all duration-500`}
                 onClick={() => activeHandler(link.id)}
               >
-                {link.title}
+                <a href={`#${link.id}`}>{link.title}</a>
               </li>
             ))}
           </ul>
